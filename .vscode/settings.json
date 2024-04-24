@@ -3,5 +3,6 @@
     "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": ["javascript"],
-  "CodeGPT.Autocomplete.enabled": false
+  "CodeGPT.Autocomplete.enabled": false,
+  "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }

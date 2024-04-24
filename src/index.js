@@ -1,11 +1,12 @@
-import getWeather from "./componants/getWeather";
 import processWeatherData from "./componants/processWeatherData";
-
+import "./style.css";
+import renderingData from "./rendering/renderingData";
 const input = document.querySelector("input");
 const button = document.querySelector("button");
-button.addEventListener("click", () => {
-  const cityWeather = processWeatherData(input.value).then((data) => {
+button.addEventListener("click", async() => {
+  const cityWeather = await processWeatherData(input.value).then((data) => {
     console.log(data);
-    return data;
+     return data;
   });
+  renderingData(cityWeather);
 });
